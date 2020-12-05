@@ -1,0 +1,45 @@
+.about {
+  background-color: #EEE9E6;
+}
+/*
+.about__title::before {
+  display: block;
+  width: 743px;
+  height: 110px;
+  padding-bottom: 33px;
+  content: " ";
+  background-image: url(../img/about-us-background-text.png);
+  background-repeat: no-repeat;
+  position: relative;
+  left: -95px;
+  top: 120px;
+
+
+}*/
+
+.about__title {
+  width: 573px;
+  padding: 160px 594px 33px 199px;
+  margin-top: 0;
+  background-image: url(../img/about-us-background-text.png);
+  background-repeat: no-repeat;
+  background-position: 108px 135px;
+}
+.about__text {
+  width: 573px;
+  padding-left: 199px;
+  padding-right: 594px;
+}
+
+.about__link {
+  color: #9A8584;
+  text-decoration-line: underline;
+}
+
+.about__quote--first {
+  width: 276px;
+  height: 72px;
+  padding-top: 16px;
+  padding-left: 891px; //убрать, когда придёт черёд сеток
+}
+

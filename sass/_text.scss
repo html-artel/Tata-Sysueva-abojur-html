@@ -1,0 +1,53 @@
+
+body {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #695A59;
+  & .header {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  & .contact__link-text {
+    text-decoration-line: underline;
+  }
+  & .promo__text {
+    color: #EEE9E6;
+    opacity: 0.6;
+  }
+}
+.logo__link, .contact__link, .menu__item  {
+  color: #695A59;
+}
+
+.promo__btn {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #A78587;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: uppercase;
+  &.promo__title {
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #EEE9E6;
+    }
+}
+
+.blockquote {
+  font-size: 14px;
+  line-height: 24px;
+}

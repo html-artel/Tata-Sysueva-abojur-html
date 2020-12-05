@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet"/>
     <title>
       Сайт студии дизайнерского текстиля в&nbsp;Сант-Петербурге
       &laquo;Abojur&raquo;
@@ -13,30 +13,34 @@
     <header class="header">
       <nav class="nav">
         <div class="logo">
-          <a class="logo__link">
-            <img class="logo__img" src="img/logo.png" height="52" width="147" />
+          <a class="header__link">
+            <img class="logo__img" src="img/Abojur.svg" height="52" width="147" />
           </a>
           <p class="logo__text">
-            Студия дизайнерского текстиля в Сант-Петербурге
+            Студия дизайнерского <br>текстиля в Сант-Петербурге
           </p>
         </div>
-        <div class="contact">
-          <a class="contact__link" href="tel:+79818574624">+7 (981) 857-46-24</a>
-          <a class="contact__link" href="#"> заказать звонок</a>
-        </div>
-        <p class="nav__address">
-          Санкт Петербург, набережная реки Карповки, дом&nbsp;5, литер&nbsp;П
-        </p>
-        <div class="nav__hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
+        <ul class="contact__list">
+          <li class="contact__item--tel">
+            <a class="contact__link" href="tel:+79818574624">+7 (981) 857-46-24
+            <span class="contact__link-text"> <br> заказать звонок</a>
+          </li>
+          <li class="contact__item--adress">
+            <p class="nav__address">
+            Санкт Петербург, набережная <br>реки Карповки, дом&nbsp;5, литер&nbsp;П
+            </p>
+          </li>
+        </ul>
+        <div class="hamburger-menu">
           <label class="menu__btn" for="menu__toggle">
+            <input id="menu__toggle" type="checkbox" class="menu__toggle"/>
             <span></span>
-          </label>
-          <ul class="menu__box">
+          <ul class="menu__box" >
             <li><a class="menu__item" href="#">Подушки</a></li>
             <li><a class="menu__item" href="#">Одеяла</a></li>
             <li><a class="menu__item" href="#">Пижамки</a></li>
           </ul>
+        </label>
         </div>
       </nav>
     </header>
@@ -50,7 +54,7 @@
           Интерьерный текстиль по&nbsp;индивидуальным размерам с&nbsp;доставкой
           на&nbsp;дом
         </p>
-        <button class="promo__btn"></button>
+        <button class="promo__btn">получить консультацию</button>
         <img
           class="promo__img"
           src="img/promo.jpg"
@@ -60,7 +64,7 @@
         />
       </section>
       <section class="about">
-        <h2 class="about__title">О компании</h2>
+          <h2 class="about__title">О компании</h2>
         <p class="about__text">
           Дорогие друзья! От&nbsp;имени команды Artendo textile studio,
           приветствую Вас на&nbsp;нашем сайте.
@@ -74,19 +78,19 @@
         </p>
         <p class="about__text">
           Наш коллектив сделает все, чтобы после сотрудничества с&nbsp;нами, Вам
-          было приятно сказать: &quot; Да! Это именно&nbsp;то, что действительно
-          достойно моего дома!&quot;
+          было приятно сказать: « Да! Это именно&nbsp;то, что действительно
+          достойно моего дома!»
         </p>
-        <blockquote class="about__quote blockquote">
+        <blockquote class="about__quote--first blockquote">
           <img
             class="blockquote__img"
             src="img/about-us-pillows.jpg"
             alt="Подушки в интерьере"
-            width="573"
-            height="520"
+            width="276"
+            height="160"
           />
           <p class="blockquote__text">
-            Недавно мы писали статью о тканях, которые используем в работе, и
+            Недавно мы писали <a href="#" class="about__link">статью</a> о тканях, которые используем в работе, и
             источниках вдохновения.
           </p>
         </blockquote>
@@ -108,16 +112,15 @@
             class="blockquote__img"
             src="img/about-us-pillows-wintercollection.jpg"
             alt="Подушки в интерьере"
-            width="573"
-            height="520"
+            width="672"
+            height="360"
           />
           <p class="blockquote__text">
             Подушки <a href="#"> Elixir №3</a> и <a href="#">Elixir №21</a> из
             зимней коллекции 2020 года
           </p>
-          <!-- Использовать псевдокласс, чтобы отличать одну цитату от другой? Или придумать ещё уникальные классы?-->
         </blockquote>
-        <p class="blockquote__text">
+        <p class="about__text">
           Мы не хотим просто делать текстиль. Мы хотим его создать. Мы хотим,
           чтобы он был исключительным и отличался, сохраняя качество на
           максимальном уровне.
