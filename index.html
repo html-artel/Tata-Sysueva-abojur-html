@@ -48,15 +48,15 @@
       <h1 class="visually-hidden">
         Студия дизайнерского текстиля в Сант-Петербурге
       </h1>
-      <section class="promo">
-        <h2 class="promo__title">создадим эмоцию вашего интерьера</h2>
-        <p class="promo__text">
+      <section class="promosection">
+        <h2 class="promosection__title">создадим эмоцию вашего интерьера</h2>
+        <p class="promosection__text">
           Интерьерный текстиль по&nbsp;индивидуальным размерам с&nbsp;доставкой
           на&nbsp;дом
         </p>
-        <button class="promo__btn">получить консультацию</button>
+        <button class="promosection__btn">получить консультацию</button>
         <img
-          class="promo__img"
+          class="promosection__img"
           src="img/promo.jpg"
           alt="Текстиль в интерьере"
           width="573"
@@ -76,11 +76,6 @@
           деталям&nbsp;&mdash; вот&nbsp;то, что по-настоящему вдохновляет
           дизайнеров нашей студии.
         </p>
-        <p class="about__text">
-          Наш коллектив сделает все, чтобы после сотрудничества с&nbsp;нами, Вам
-          было приятно сказать: « Да! Это именно&nbsp;то, что действительно
-          достойно моего дома!»
-        </p>
         <blockquote class="about__quote--first blockquote">
           <img
             class="blockquote__img"
@@ -94,6 +89,11 @@
             источниках вдохновения.
           </p>
         </blockquote>
+        <p class="about__text">
+          Наш коллектив сделает все, чтобы после сотрудничества с&nbsp;нами, Вам
+          было приятно сказать: « Да! Это именно&nbsp;то, что действительно
+          достойно моего дома!»
+        </p>
         <div class="about__content">
           <p class="about__text about__text--mod">
             Понимание тенденций рынка и особенностей менталитета наших клиентов
@@ -107,7 +107,7 @@
           последние коллекции, созданные европейскими дизайнерами – мастерами
           своего дела из лучших тканей, всегда на нашем складе.
         </p>
-        <blockquote class="about__quote blockquote">
+        <blockquote class="about__quote--second blockquote">
           <img
             class="blockquote__img"
             src="img/about-us-pillows-wintercollection.jpg"
@@ -116,7 +116,7 @@
             height="360"
           />
           <p class="blockquote__text">
-            Подушки <a href="#"> Elixir №3</a> и <a href="#">Elixir №21</a> из
+            Подушки <a href="#" class="about__link"> Elixir №3</a> и <a href="#" class="about__link">Elixir №21</a> из
             зимней коллекции 2020 года
           </p>
         </blockquote>
@@ -131,62 +131,68 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <article class="catalog-card">
-              <h3 class="catalog-card__subtitle">Подушки Casa Nova</h3>
               <img
                 class="catalog-card__img"
                 src="img/catalog-casa-nova.jpg"
                 alt="Подушка Casa Nova"
               />
-              <p class="catalog-card__text">от 15 000 ₽</p>
-              <p class="catalog-card__text">
-                *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
-                изделия
-              </p>
-              <a class="catalog-card__link" href="#"> заказать </a>
+              <div class="catalog-card--innerbox">
+                <h3 class="catalog-card__title">Подушки Casa Nova</h3>
+                <p class="catalog-card__text--cost">от 15 000 ₽</p>
+                <p class="catalog-card__text--footnote">
+                  *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
+                  изделия
+                </p>
+                <a class="catalog-card__link" href="#"> заказать </a>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
             <article class="catalog-card">
-              <h3 class="catalog-card__subtitle">Покрывало ШАНТИ</h3>
               <img
                 class="catalog-card__img"
                 src="img/catalog-Shanty.jpg"
                 alt="Покрывало ШАНТИ"
               />
-              <p class="catalog-card__text">от 13 660 ₽</p>
-              <p class="catalog-card__text">
-                *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
-                изделия
-              </p>
-              <a class="catalog-card__link" href="#"> заказать </a>
+              <div class="catalog-card--innerbox">
+                <h3 class="catalog-card__title">Покрывало ШАНТИ</h3>
+                <p class="catalog-card__text--cost">от 13 660 ₽</p>
+                <p class="catalog-card__text--footnote">
+                  *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
+                  изделия
+                </p>
+                <a class="catalog-card__link" href="#"> заказать </a>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
             <article class="catalog-card">
-              <h3 class="catalog-card__subtitle">Подушки Elixir №7</h3>
               <img
                 class="catalog-card__img"
                 src="img/catalog-Elixir7.jpg"
                 alt="Подушки Elixir №7"
               />
-              <p class="catalog-card__text">от 15 000 ₽</p>
-              <p class="catalog-card__text">
-                *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
-                изделия
-              </p>
-              <a class="catalog-card__link" href="#"> заказать </a>
+              <div class="catalog-card--innerbox">
+                <h3 class="catalog-card__title">Подушки Elixir №7</h3>
+                <p class="catalog-card__text--cost">от 15 000 ₽</p>
+                <p class="catalog-card__text--footnote">
+                  *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
+                  изделия
+                </p>
+                <a class="catalog-card__link" href="#"> заказать </a>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
             <article class="catalog-card">
-              <h3 class="catalog-card__subtitle">Подушки Basic</h3>
+              <h3 class="catalog-card__title">Подушки Basic</h3>
               <img
                 class="catalog-card__img"
                 src="img/catalog-Basic.jpg"
                 alt="Подушки Basic"
               />
-              <p class="catalog-card__text">от 11 000 ₽</p>
-              <p class="catalog-card__text">
+              <p class="catalog-card__text--cost">от 11 000 ₽</p>
+              <p class="catalog-card__text--footnote">
                 *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
                 изделия
               </p>
@@ -195,18 +201,20 @@
           </li>
           <li class="catalog-item">
             <article class="catalog-card">
-              <h3 class="catalog-card__subtitle">Подушки Vintage</h3>
               <img
                 class="catalog-card__img"
                 src="img/catalog-Vintag.jpg"
                 alt="Подушки Vintage"
               />
-              <p class="catalog-card__text">от 17 000 ₽</p>
-              <p class="catalog-card__text">
-                *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
-                изделия
-              </p>
-              <a class="catalog-card__link" href="#"> заказать </a>
+              <div class="catalog-card--innerbox">
+                <h3 class="catalog-card__title">Подушки Vintage</h3>
+                <p class="catalog-card__text--cost">от 17 000 ₽</p>
+                <p class="catalog-card__text--footnote">
+                  *стоимость варьируется в&nbsp;зависимости от&nbsp;размера
+                  изделия
+                </p>
+                <a class="catalog-card__link" href="#"> заказать </a>
+              </div>
             </article>
           </li>
         </ul>

@@ -1,8 +1,8 @@
-.promo {
+.promosection {
   /*background-color: black;*/
   background-image: url("../img/promo-background-img.png");
 }
-.promo__btn {
+.promosection__btn {
   width: 228px;
   height: 52px;
   background: transparent;
@@ -12,20 +12,22 @@
   margin-left: 204px;
 }
 
-.promo__title {
+.promosection__title {
   width: 474px;
   height: 192px;
   padding-top: 80px;
   padding-left: 204px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.promo__text {
+.promosection__text {
   width: 434px;
   height: 64px;
   padding-left: 204px;
 }
 
-.promo__img {
+.promosection__img {
   //убрать, когда придёт черёд сеток
   padding-left: 698px;
 }

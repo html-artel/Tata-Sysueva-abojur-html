@@ -208,12 +208,12 @@ li {
   color: #343235;
 }
 
-.promo {
+.promosection {
   /*background-color: black;*/
   background-image: url("../img/promo-background-img.png");
 }
 
-.promo__btn {
+.promosection__btn {
   width: 228px;
   height: 52px;
   background: transparent;
@@ -223,20 +223,22 @@ li {
   margin-left: 204px;
 }
 
-.promo__title {
+.promosection__title {
   width: 474px;
   height: 192px;
   padding-top: 80px;
   padding-left: 204px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.promo__text {
+.promosection__text {
   width: 434px;
   height: 64px;
   padding-left: 204px;
 }
 
-.promo__img {
+.promosection__img {
   padding-left: 698px;
 }
 
@@ -259,16 +261,37 @@ body .contact__link-text {
           text-decoration-line: underline;
 }
 
-body .promo__text {
+body .promosection__text {
   color: #EEE9E6;
   opacity: 0.6;
+}
+
+body .catalog-card__text--cost {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: #343235;
+}
+
+body .catalog-card__text--footnote {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.6;
+}
+
+body .catalog-card__link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #9A8584;
 }
 
 .logo__link, .contact__link, .menu__item {
   color: #695A59;
 }
 
-.promo__btn {
+.promosection__btn {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
@@ -286,7 +309,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h2.promo__title {
+h2.promosection__title {
   font-size: 46px;
   font-weight: normal;
   line-height: 64px;
@@ -299,25 +322,26 @@ h2.promo__title {
   line-height: 24px;
 }
 
+.about__text--mod {
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 48px;
+}
+
+.catalog-card__title {
+  font-family: Old Standard TT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  color: #695A59;
+  margin: 0;
+}
+
 .about {
   background-color: #EEE9E6;
 }
 
-/*
-.about__title::before {
-  display: block;
-  width: 743px;
-  height: 110px;
-  padding-bottom: 33px;
-  content: " ";
-  background-image: url(../img/about-us-background-text.png);
-  background-repeat: no-repeat;
-  position: relative;
-  left: -95px;
-  top: 120px;
-
-
-}*/
 .about__title {
   width: 573px;
   padding: 160px 594px 33px 199px;
@@ -331,6 +355,7 @@ h2.promo__title {
   width: 573px;
   padding-left: 199px;
   padding-right: 594px;
+  margin: 0;
 }
 
 .about__link {
@@ -343,6 +368,58 @@ h2.promo__title {
   width: 276px;
   height: 72px;
   padding-top: 16px;
-  padding-left: 891px;
+}
+
+.about__quote--second .blockquote__text {
+  border-left: 1px solid #A78587;
+  padding-left: 19px;
+}
+
+.about__text--mod {
+  padding: 80px 99px 80px 99px;
+  width: 968px;
+  height: 144px;
+}
+
+.about__content {
+  background-image: url(../img/about-us-background-img.png);
+  background-repeat: no-repeat;
+  width: 1166px;
+  height: 304px;
+}
+
+.catalog {
+  background-color: #EEE9E6;
+}
+
+.catalog__title {
+  width: 573px;
+  padding: 132px 594px 33px 199px;
+  margin-top: 0;
+  background-image: url(../img/catalog-background-text.png);
+  background-repeat: no-repeat;
+  background-position: 108px 135px;
+}
+
+.catalog-card {
+  background: #fff;
+  width: 375px;
+  height: 604px;
+}
+
+.catalog-card__link::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 85px;
+  top: -20px;
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/catalog-arrow.png);
+  background-repeat: no-repeat;
+}
+
+.catalog-card--innerbox {
+  padding: 36px 36px 40px 36px;
 }
 /*# sourceMappingURL=normalize.css.map */

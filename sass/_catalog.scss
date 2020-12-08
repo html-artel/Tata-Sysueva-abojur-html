@@ -1,0 +1,32 @@
+.catalog {
+  background-color: #EEE9E6;
+}
+
+.catalog__title {
+  width: 573px;
+  padding: 132px 594px 33px 199px;
+  margin-top: 0;
+  background-image: url(../img/catalog-background-text.png);
+  background-repeat: no-repeat;
+  background-position: 108px 135px;
+}
+.catalog-card {
+  background: #fff;
+  width: 375px;
+  height: 604px;
+}
+.catalog-card__link::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 85px;
+    top: -20px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/catalog-arrow.png);
+    background-repeat: no-repeat;
+}
+
+.catalog-card--innerbox {
+  padding: 36px 36px 40px 36px;
+}
