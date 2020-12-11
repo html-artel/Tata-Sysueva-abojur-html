@@ -277,6 +277,7 @@ body .catalog-card__text--footnote {
   font-size: 14px;
   line-height: 20px;
   opacity: 0.6;
+  margin-bottom: 0;
 }
 
 body .catalog-card__link {
@@ -405,6 +406,9 @@ h2.promosection__title {
   background: #fff;
   width: 375px;
   height: 604px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 100px;
 }
 
 .catalog-card__link::after {
@@ -419,7 +423,122 @@ h2.promosection__title {
   background-repeat: no-repeat;
 }
 
+.catalog-card__link:focus {
+  outline: 1px solid #9A8584;
+  outline-offset: 1px;
+}
+
+.catalog-card__link:hover {
+  background-color: #CFD8DC;
+}
+
+.catalog-card__link:active {
+  color: #343235;
+}
+
 .catalog-card--innerbox {
   padding: 36px 36px 40px 36px;
+}
+
+.catalog-card--horizontal {
+  background: #fff;
+  width: 573px;
+  height: 264px;
+}
+
+.catalog-card--horizontal:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-card__img--horizontal {
+  float: left;
+  margin-right: 36px;
+}
+
+.catalog-card__link--horizontal::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 265px;
+  top: -20px;
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/catalog-arrow.png);
+  background-repeat: no-repeat;
+}
+
+.projects {
+  background-color: #EEE9E6;
+}
+
+.projects__title {
+  width: 348px;
+  height: 108px;
+  padding: 132px 594px 33px 199px;
+  margin-top: 0;
+  background-image: url(../img/projects-background-text.png);
+  background-repeat: no-repeat;
+  background-position: 110px 132px;
+}
+
+.projects-slider {
+  position: relative;
+  width: 968px;
+  height: 660px;
+  overflow: hidden;
+}
+
+.projects-slider__container {
+  position: relative;
+  width: 10000px;
+  height: 660px;
+}
+
+.projects-slider__img {
+  float: left;
+  padding: 44px 199px 120px 199px;
+}
+
+.projects-previous__control, .projects-next__control {
+  position: absolute;
+  top: 135px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+
+.projects-previous__control:hover, .projects-next__control:hover {
+  opacity: 0.6;
+}
+
+.projects-previous__control {
+  left: 100px;
+  top: 338px;
+  background-image: url(../img/projects-arrow-left.svg);
+}
+
+.projects-next__control {
+  right: -10px;
+  top: 338px;
+  background-image: url(../img/projects-arrow-right.svg);
+}
+
+.projects-slider__img {
+  height: 660px;
+}
+
+.projects-slider__desc {
+  visibility: hidden;
+}
+
+.projects-slider__img:hover ~ .projects-slider__desc {
+  visibility: visible;
+}
+
+.projects-slider__desc {
+  display: block;
+  width: 968px;
+  height: 100px;
 }
 /*# sourceMappingURL=normalize.css.map */
