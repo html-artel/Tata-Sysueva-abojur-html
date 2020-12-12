@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Montserrat", "Verdana", sans-serif;
+  font-family:  Montserrat, Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -35,6 +35,13 @@ body {
     line-height: 16px;
     text-transform: uppercase;
     color: #9A8584;
+  }
+  & .company__text {
+    color: #FBF3F0;
+  }
+  & .company__text--small {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 .logo__link, .contact__link, .menu__item {
@@ -87,4 +94,12 @@ h2 {
   margin: 0;
 }
 
+.company__title, .footer__title {
+  color: #EEE9E6;
+  margin: 0;
+}
 
+.footer__text {
+  color: #EEE9E6;
+  opacity: 0.6;
+}

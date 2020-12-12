@@ -243,7 +243,7 @@ li {
 }
 
 body {
-  font-family: "Montserrat", "Verdana", sans-serif;
+  font-family: Montserrat, Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -286,6 +286,15 @@ body .catalog-card__link {
   line-height: 16px;
   text-transform: uppercase;
   color: #9A8584;
+}
+
+body .company__text {
+  color: #FBF3F0;
+}
+
+body .company__text--small {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .logo__link, .contact__link, .menu__item {
@@ -337,6 +346,16 @@ h2.promosection__title {
   line-height: 36px;
   color: #695A59;
   margin: 0;
+}
+
+.company__title, .footer__title {
+  color: #EEE9E6;
+  margin: 0;
+}
+
+.footer__text {
+  color: #EEE9E6;
+  opacity: 0.6;
 }
 
 .about {
@@ -467,7 +486,7 @@ h2.promosection__title {
   background-repeat: no-repeat;
 }
 
-.projects {
+.projects, .collection {
   background-color: #EEE9E6;
 }
 
@@ -540,5 +559,14 @@ h2.promosection__title {
   display: block;
   width: 968px;
   height: 100px;
+}
+
+.company {
+  background: #343235;
+}
+
+.footer {
+  background-image: url(../img/footer-background-img.png);
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=normalize.css.map */
