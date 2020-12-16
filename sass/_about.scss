@@ -6,10 +6,11 @@
   width: 573px;
   padding: 160px 594px 33px 199px;
   margin-top: 0;
-  background-image: url(../img/about-us-background-text.png);
+  background-image: url("../img/about-us-background-text.png");
   background-repeat: no-repeat;
   background-position: 108px 135px;
 }
+
 .about__text {
   width: 573px;
   padding-left: 199px;
@@ -32,17 +33,18 @@
   .blockquote__text {
     border-left: 1px solid #A78587;
     padding-left: 19px;
-}
+  }
 }
 
 .about__text--mod {
   padding: 80px 99px 80px 99px;
   width: 968px;
- height: 144px;
+  height: 144px;
 }
+
 .about__content {
-  background-image: url(../img/about-us-background-img.png);
-  background-repeat: no-repeat;
   width: 1166px;
   height: 304px;
+  background-image: url("../img/about-us-background-img.png");
+  background-repeat: no-repeat;
 }

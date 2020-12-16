@@ -1,18 +1,21 @@
 .visually-hidden {
-  position: absolute;
   clip: rect(0 0 0 0);
-  width: 1px;
+  clip-path: inset(50%);
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
+
 a {
   text-decoration: none;
  }
+
 li {
   list-style: none;
 }
 
-@import "fonts";
 @import "header";
 @import "promo";
 @import "text";
@@ -20,5 +23,6 @@ li {
 @import "catalog";
 @import "projects";
 @import "company";
-@import "footer"
+@import "footer";
+
 

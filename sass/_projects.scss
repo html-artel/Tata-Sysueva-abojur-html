@@ -7,12 +7,10 @@
   height: 108px;
   padding: 132px 594px 33px 199px;
   margin-top: 0;
-  background-image: url(../img/projects-background-text.png);
+  background-image: url("../img/projects-background-text.png");
   background-repeat: no-repeat;
   background-position: 110px 132px;
 }
-
-//слайдер
 
 .projects-slider {
   position: relative;
@@ -48,13 +46,13 @@
 .projects-previous__control {
   left: 100px;
   top: 338px;
-  background-image: url(../img/projects-arrow-left.svg);
+  background-image: url("../img/projects-arrow-left.svg");
 }
 
 .projects-next__control {
   right: -10px;
   top: 338px;
-  background-image: url(../img/projects-arrow-right.svg);
+  background-image: url("../img/projects-arrow-right.svg");
 }
 
 .projects-slider__img {

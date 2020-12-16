@@ -1,33 +1,70 @@
 
+@import "variables";
+
+/*Основной текст*/
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"),
+       local("Montserrat-Medium"),
+       url("../fonts/Montserrat-Medium.woff") format("woff"),
+       url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"),
+       local("Montserrat-Bold"),
+       url("../fonts/montserratbold.woff2") format("woff2"),
+       url("../fonts/montserratbold.woff") format("woff"),
+       url("../fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Заголовки*/
+@font-face {
+  font-family: "Old Standard TT";
+  src: local("Old Standard TT Regular"),
+       local("OldStandardTT-Regular"),
+       url("../fonts/oldstandardttregular.woff2") format("woff2"),
+       url("../fonts/oldstandardttregular.woff") format("woff"),
+       url("../fonts/oldstandardttregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family:  Montserrat, Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
-  color: #695A59;
+  color: $text-dark;
   & .header {
     font-size: 14px;
     line-height: 24px;
   }
   & .contact__link-text {
     text-decoration-line: underline;
+    color: $text-dark;
   }
   & .promosection__text {
-    color: #EEE9E6;
+    color: $main;
     opacity: 0.6;
   }
   & .catalog-card__text--cost {
     font-weight: bold;
     font-size: 22px;
     line-height: 24px;
-    color: #343235;
+    color: $background-dark;
   }
   & .catalog-card__text--footnote {
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
     opacity: 0.6;
-    margin-bottom: 0;
   }
   & .catalog-card__link {
     font-weight: bold;
@@ -44,6 +81,7 @@ body {
     line-height: 24px;
   }
 }
+
 .logo__link, .contact__link, .menu__item {
   color: #695A59;
 }
@@ -69,7 +107,7 @@ h2 {
     font-weight: normal;
     line-height: 64px;
     text-transform: uppercase;
-    color: #EEE9E6;
+    color: $main;
     }
 }
 
@@ -95,11 +133,11 @@ h2 {
 }
 
 .company__title, .footer__title {
-  color: #EEE9E6;
+  color: $main;
   margin: 0;
 }
 
 .footer__text {
-  color: #EEE9E6;
+  color: $main;
   opacity: 0.6;
 }
