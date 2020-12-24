@@ -1,4 +1,90 @@
 .footer {
   background-image: url("../img/footer-background-img.png");
-  background-repeat: no-repeat;
+}
+
+#feedback-form {
+  width: 500px;
+  height: 321px;
+}
+
+.feedback-form-name, .feedback-form-tel {
+  width: 469px;
+  height: 34px;
+  margin-bottom: 36px;
+  border-style: none;
+  border-bottom: 1px solid #A78587;
+  background-color: transparent;
+  color: rgba(246, 237, 233, 1);
+  &::-moz-placeholder {
+    color: rgba(246, 237, 233, 1);
+  }
+  &::-webkit-input-placeholder {
+    color: rgba(246, 237, 233, 1);
+  }
+}
+
+.feedback-dropdown--mod {
+  border: 1px solid #A78587;
+  width: 218px;
+  height: 50px;
+  padding: 16px 0px 16px 20px;
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color:  #FFFFFF;
+  background: transparent;
+}
+
+.feedback-dropdown {
+  width: 190px;
+  height: 50px;
+  overflow: hidden;
+  border-right: 1px solid #A78587;
+  background: url("../img/footer-arrow-bottom.svg") no-repeat 92%;
+}
+
+option {
+  color:  #FFFFFF;
+  background:  #695A59;
+}
+
+label .feedback-form--chekbox + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/footer-chek.svg") no-repeat;
+  cursor: pointer;
+}
+
+label .feedback-form--chekbox:checked + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/footer-check.png") no-repeat;
+  cursor: pointer;
+}
+
+label .feedback-form--chekbox {
+  position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.feedback__btn {
+  width: 474px;
+  height: 52px;
+  background: transparent;
+  border-style: none;
+  border-top: 1px solid #A78587;
+  border-bottom: 1px solid #A78587;
 }

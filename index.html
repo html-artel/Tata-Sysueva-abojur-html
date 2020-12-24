@@ -18,7 +18,7 @@
       <ul class="contact__list">
         <li class="contact__item--tel">
           <a class="contact__link" href="tel:+79818574624">+7 (981) 857-46-24</a>
-            <a class="contact__link-text" href="#contact"> <br> заказать звонок</a>
+            <a class="contact__link-text" href="#contact"> заказать звонок</a>
         </li>
         <li class="contact__item--adress">
           <span class="nav__address">
@@ -262,26 +262,29 @@
     </p>
     <form id="feedback-form" action="#" method="post">
       <label for="feedback-form-name" class="visually-hidden">Ваше имя</label>
-      <input type="text" name="feedback-form-name" id="feedback-form-name" placeholder="Ваше имя" />
+      <input type="text" name="feedback-form-name" id="feedback-form-name" placeholder="Ваше имя" class="feedback-form-name"/>
       <label for="feedback-form-tel" class="visually-hidden">Ваш номер телефона</label>
-      <input type="tel" name="feedback-form-tel" id="feedback-form-tel" placeholder="Введите телефон" />
+      <input type="tel" name="feedback-form-tel" id="feedback-form-tel" placeholder="Введите телефон" class="feedback-form-tel"/>
       <div class="feedback-dropdown">
-        <select name="time-select" form="feedback-form" size="2">
+        <select class="feedback-dropdown--mod" name="time-select" form="feedback-form" size="1">
+          <option>Удобное время</option>
           <option>Утро</option>
           <option>День</option>
           <option>Вечер</option>
         </select>
       </div>
-      <label for="feedback-form-agreement">
+
+      <label for="feedback-form-agreement" class="feedback-text">
+        <input type="checkbox" name="agreement" id="feedback-form-agreement" class="feedback-form--chekbox" />
+        <span></span>
         Согласие на обработку персональных данных
       </label>
-      <input type="checkbox" name="agreement" id="feedback-form-agreement" checked />
-      <button type="submit">Оставить заявку</button>
+      <button type="submit" class="feedback__btn">Оставить заявку</button>
     </form>
-    <img class="main-footer__img" src="img/footer-map.png" alt="Карта" width="474" height="734" />
+    <!-- <img class="main-footer__img" src="img/footer-map.png" alt="Карта" width="474" height="734" /> -->
   </footer>
-  <div class="modal">
-    <!--Модальное окно "Заказать звонок"-->
+ <!-- <div class="modal">
+
     <div class="modal__wrap">
       <div class="modal__window" role="dialog" aria-modal="true">
         <button class="modal__close">Close</button>
@@ -298,18 +301,18 @@
       </div>
     </div>
   </div>
-  <div class="modal">
-    <!--Модальное окно "Получить консультацию"-->
+  <div class="modal"> -->
+
     <div class="modal__wrap">
       <div class="modal__window">
         <button data-close class="modal__close">Close</button>
-        <h2>Получить консультацию</h2>
-        <form id="consultation-form" action="#" method="post">
+        <h2 class="modal-title">Получить консультацию</h2>
+        <form id="consultation-form" action="#" method="post" class="consultation-form">
           <label for="consultation-form-name" class="visually-hidden">Ваше имя</label>
-          <input type="text" name="consultation-form-name" id="consultation-form-name" placeholder="Ваше имя" />
+          <input type="text" name="consultation-form-name" id="consultation-form-name" placeholder="Ваше имя" class="consultation-form-name"/>
           <label for="consultation-form-tel" class="visually-hidden">Ваш номер телефона</label>
-          <input type="tel" name="contact-form-tel" id="consultation-form-tel" placeholder="Введите телефон" />
-          <button type="submit">Отправить</button>
+          <input type="tel" name="contact-form-tel" id="consultation-form-tel" placeholder="Введите телефон" class="consultation-form-tel"/>
+          <button type="submit" class="modal__btn">Отправить</button>
         </form>
       </div>
     </div>

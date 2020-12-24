@@ -254,7 +254,7 @@ body .company__text--small {
   color: #695A59;
 }
 
-.promosection__btn {
+.promosection__btn, .feedback__btn, .modal__btn {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
@@ -270,6 +270,7 @@ h2 {
   font-size: 42px;
   line-height: 54px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2.promosection__title {
@@ -306,9 +307,27 @@ h2.promosection__title {
   margin: 0;
 }
 
+.footer__title {
+  padding-top: 92px;
+}
+
 .footer__text {
   color: #EEE9E6;
   opacity: 0.6;
+  margin: 0;
+  width: 474px;
+  height: 64px;
+}
+
+.footer__title {
+  width: 474px;
+  height: 108px;
+}
+
+.feedback-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 
 .about {
@@ -458,6 +477,7 @@ h2.promosection__title {
   width: 968px;
   height: 660px;
   overflow: hidden;
+  padding-bottom: 120px;
 }
 
 .projects-slider__container {
@@ -491,7 +511,7 @@ h2.promosection__title {
 }
 
 .projects-next__control {
-  right: -10px;
+  right: -15px;
   top: 338px;
   background-image: url("../img/projects-arrow-right.svg");
 }
@@ -520,6 +540,139 @@ h2.promosection__title {
 
 .footer {
   background-image: url("../img/footer-background-img.png");
-  background-repeat: no-repeat;
+}
+
+#feedback-form {
+  width: 500px;
+  height: 321px;
+}
+
+.feedback-form-name, .feedback-form-tel {
+  width: 469px;
+  height: 34px;
+  margin-bottom: 36px;
+  border-style: none;
+  border-bottom: 1px solid #A78587;
+  background-color: transparent;
+  color: #f6ede9;
+}
+
+.feedback-form-name::-moz-placeholder, .feedback-form-tel::-moz-placeholder {
+  color: #f6ede9;
+}
+
+.feedback-form-name::-webkit-input-placeholder, .feedback-form-tel::-webkit-input-placeholder {
+  color: #f6ede9;
+}
+
+.feedback-dropdown--mod {
+  border: 1px solid #A78587;
+  width: 218px;
+  height: 50px;
+  padding: 16px 0px 16px 20px;
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+.feedback-dropdown {
+  width: 190px;
+  height: 50px;
+  overflow: hidden;
+  border-right: 1px solid #A78587;
+  background: url("../img/footer-arrow-bottom.svg") no-repeat 92%;
+}
+
+option {
+  color: #FFFFFF;
+  background: #695A59;
+}
+
+label .feedback-form--chekbox + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/footer-chek.svg") no-repeat;
+  cursor: pointer;
+}
+
+label .feedback-form--chekbox:checked + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/footer-check.png") no-repeat;
+  cursor: pointer;
+}
+
+label .feedback-form--chekbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.feedback__btn {
+  width: 474px;
+  height: 52px;
+  background: transparent;
+  border-style: none;
+  border-top: 1px solid #A78587;
+  border-bottom: 1px solid #A78587;
+}
+
+.modal__window {
+  background-image: url("../img/footer-background-img.png");
+}
+
+.consultation-form {
+  width: 500px;
+  height: 100%;
+  padding-bottom: 120px;
+}
+
+.modal-title {
+  font-size: 24px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #EEE9E6;
+}
+
+.consultation-form-name, .consultation-form-tel {
+  width: 469px;
+  height: 34px;
+  margin-bottom: 36px;
+  border-style: none;
+  border-bottom: 1px solid #A78587;
+  background-color: transparent;
+  color: #f6ede9;
+}
+
+.consultation-form-name::-moz-placeholder, .consultation-form-tel::-moz-placeholder {
+  color: #f6ede9;
+}
+
+.consultation-form-name::-webkit-input-placeholder, .consultation-form-tel::-webkit-input-placeholder {
+  color: #f6ede9;
+}
+
+.modal__btn {
+  width: 474px;
+  height: 52px;
+  background: transparent;
+  border-style: none;
+  border-top: 1px solid #A78587;
+  border-bottom: 1px solid #A78587;
 }
 /*# sourceMappingURL=normalize.css.map */

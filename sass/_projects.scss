@@ -17,6 +17,7 @@
   width: 968px;
   height: 660px;
   overflow: hidden;
+  padding-bottom: 120px;
 }
 
 .projects-slider__container {
@@ -50,8 +51,9 @@
 }
 
 .projects-next__control {
-  right: -10px;
+  right: -15px;
   top: 338px;
+
   background-image: url("../img/projects-arrow-right.svg");
 }
 

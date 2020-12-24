@@ -86,7 +86,7 @@ body {
   color: #695A59;
 }
 
-.promosection__btn {
+.promosection__btn, .feedback__btn, .modal__btn {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
@@ -102,6 +102,7 @@ h2 {
   font-size: 42px;
   line-height: 54px;
   text-transform: uppercase;
+  margin: 0;
   &.promosection__title {
     font-size: 46px;
     font-weight: normal;
@@ -137,7 +138,26 @@ h2 {
   margin: 0;
 }
 
+.footer__title {
+  padding-top: 92px;
+}
+
 .footer__text {
   color: $main;
   opacity: 0.6;
+  margin: 0;
+  width: 474px;
+  height: 64px;
+}
+
+.footer__title {
+  width: 474px;
+  height: 108px;
+}
+
+.feedback-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+
 }
