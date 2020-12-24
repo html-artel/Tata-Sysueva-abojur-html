@@ -543,8 +543,31 @@ h2.promosection__title {
 }
 
 #feedback-form {
+  position: relative;
   width: 500px;
   height: 321px;
+}
+
+.feedback--name::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 471px;
+  top: 29px;
+  background: url("../img/footer-line.svg") no-repeat;
+}
+
+.feedback--tel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 471px;
+  top: 102px;
+  background: url("../img/footer-line.svg") no-repeat;
 }
 
 .feedback-form-name, .feedback-form-tel {
@@ -593,6 +616,13 @@ option {
   background: #695A59;
 }
 
+.feedback-text {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  min-height: 28px;
+}
+
 label .feedback-form--chekbox + span {
   position: absolute;
   left: 0;
@@ -609,7 +639,7 @@ label .feedback-form--chekbox:checked + span {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/footer-check.png") no-repeat;
+  background: url("../img/footer-check.svg") no-repeat;
   cursor: pointer;
 }
 
