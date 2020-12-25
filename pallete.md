@@ -4,7 +4,7 @@ white: #FFFFFF;
 background-header: #F8F6F5;
 background-dark: #343235;
 background-footer: rgba(52, 50, 53, 0.9);
-background-mission_deco:  rgba(52, 50, 53, 0.6);
+background-company_deco:  rgba(52, 50, 53, 0.6);
  
 text-dark: #695A59;
 text-dark-secondary: #9A8584;
@@ -13,4 +13,4 @@ text-mixed: #F5F2ED;
 text-background: #EAE1DC;
 text-background_talk: rgba(154, 133, 132, 0.1);
 text-unput: #F6EDE9;
-text-mission_team: #FBF3F0;
+text-company_team: #FBF3F0;
