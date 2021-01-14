@@ -1,0 +1,316 @@
+.page {
+  display: grid;
+  grid-template-rows:
+    auto
+    1fr
+    auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  min-height: 100vh;
+}
+
+.page-header {
+  grid-area: header;
+  min-height: 80px;
+}
+
+.page-content {
+  grid-area: content;
+}
+
+.page-footer {
+  grid-area: footer;
+  min-height: 100px;
+}
+
+.container {
+  max-width: 1166px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+//Шапка
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  min-width: 1166px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+}
+
+.logo {
+  grid-column: 1/5;
+  width: 375px;
+}
+
+.contact__tel {
+  grid-column: 7/9;
+  width: 174px;
+}
+
+.contact__adress {
+  grid-column: 9/12;
+  width: 272px;
+}
+
+.hamburger-menu {
+  grid-column: 12/13;
+  width: 36px;
+}
+
+//Промоблок
+
+.promosection__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  min-width: 1166px;
+}
+
+.promosection--wrapper {
+  grid-column: 2/7;
+  width: 474px;
+}
+
+.promosection__img--wrapper {
+  grid-column: 7/13;
+  width: 573px;
+}
+
+//О нас
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  min-width: 1166px;
+}
+
+.about__title--wrapper {
+  grid-column: 1/9;
+}
+
+.about--wrapper, .about__text {
+  grid-column: 2/8;
+}
+
+.about__quote--first {
+  grid-column: 9/12;
+}
+
+.about__content {
+  grid-column: 1/13;
+}
+
+.about__quote--second {
+  grid-column: 2/9;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.blockquote__img {
+  grid-column: 1/2;
+  grid-row: 1/8;
+}
+
+.blockquote__text {
+  grid-column: 2/3;
+  grid-row: 7/8;
+  width: 256px;
+}
+
+//Каталог
+
+.catalog__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3,auto);
+  gap: 20px;
+  min-width: 1166px;
+}
+
+.catalog__title--wrapper {
+  grid-column: 1/9;
+  grid-row: 1/2;
+}
+
+.catalog-card--first {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+
+.catalog-card--second {
+  grid-column: 5/9;
+  grid-row: 2/3;
+}
+
+.catalog-card--third {
+  grid-column: 9/13;
+  grid-row: 2/3;
+}
+
+.catalog-card--fourth {
+  grid-column: 1/7;
+  grid-row: 3/4;
+}
+
+.catalog-card--fifth {
+  grid-column: 7/13;
+  grid-row: 3/4;
+}
+
+// Проекты
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  min-width: 1166px;
+}
+
+.projects__title--wrapper {
+  grid-column: 1/9;
+}
+
+.projects__slider {
+  grid-column: 1/13;
+}
+
+//Миссия
+
+.company__container--first {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  min-width: 1166px;
+}
+
+.company__title--wrapper--first {
+  grid-column: 7/13;
+  grid-row: 1/2;
+}
+
+.copany__text--wrapper {
+  grid-column: 8/13;
+  grid-row: 2/3;
+}
+
+.company__img--cup {
+  grid-column: 1/7;
+  grid-row: 1/4;
+}
+
+.company__img--dog {
+  grid-column: 7/13;
+  grid-row: 3/5;
+}
+
+.company__img--chair {
+  grid-column: 4/7;
+  grid-row: 4/5;
+}
+
+// Наша команда
+
+.company__container--second {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  min-width: 1166px;
+}
+
+.company__title--wrapper--second {
+  grid-column: 1/9;
+}
+
+.company--wrapper--second{
+  grid-column: 2/8;
+}
+
+.company__text--small {
+  grid-column: 9/13;
+}
+
+.company__img--women {
+  grid-column: 1/-1;
+}
+
+// Метаморфозы
+
+.collection__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  min-width: 1166px;
+}
+
+.collection__title--wrapper {
+  grid-column: 1/12;
+  grid-row: 1/2;
+}
+
+.collection__text {
+  grid-column: 2/8;
+  grid-row: 2/3;
+}
+
+.collection__img--first {
+  grid-column: 1/7;
+  grid-row: 3/5;
+}
+.collection__img--second {
+  grid-column: 7/-1;
+  grid-row: 3/4;
+}
+.collection__img--third {
+  grid-column: 7/-1;
+  grid-row: 4/5;
+}
+
+.collection__img--fourth {
+  grid-column: 1/7;
+  grid-row: 5/6;
+}
+
+.collection__img--fifth {
+  grid-column: 1/7;
+  grid-row: 6/7;
+}
+
+.collection__img--sixth {
+  grid-column: 7/-1;
+  grid-row: 5/7;
+}
+
+//Подвал
+
+.page-footer__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 20px;
+  min-width: 1166px;
+}
+
+.page-footer__title--wrapper {
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+
+.page-footer__feedback-form--wrapper {
+  grid-column: 2/7;
+  grid-row: 2/4;
+}
+
+.page-footer__img {
+  grid-column: 8/-1;
+  grid-row: 1/4;
+}

@@ -42,7 +42,7 @@ body {
   font-size: 18px;
   line-height: 32px;
   color: $text-dark;
-  & .header {
+  & .page-header {
     font-size: 14px;
     line-height: 24px;
   }
@@ -79,6 +79,9 @@ body {
   & .company__text--small {
     font-size: 14px;
     line-height: 24px;
+  }
+  & .collection__text {
+    margin: 0;
   }
 }
 
@@ -133,24 +136,41 @@ h2 {
   margin: 0;
 }
 
-.company__title, .footer__title {
+.company__title--first, .company__title--second, .page-footer__title {
   color: $main;
   margin: 0;
 }
 
-.footer__title {
-  padding-top: 92px;
+.projects-slider__description {
+  font-family: Old Standard TT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  color: #F5F2ED;
 }
 
-.footer__text {
+.projects-slider__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #F5F2ED;
+}
+
+.page-footer__text {
+  font-size: 18px;
   color: $main;
   opacity: 0.6;
   margin: 0;
+  padding-bottom: 44px;
   width: 474px;
   height: 64px;
 }
 
-.footer__title {
+.page-footer__title {
   width: 474px;
   height: 108px;
 }
@@ -159,5 +179,4 @@ h2 {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
-
 }

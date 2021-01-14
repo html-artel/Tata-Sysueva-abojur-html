@@ -8,6 +8,11 @@
   width: 1px;
 }
 
+body {
+  padding: 0;
+  min-height: 8817px;
+}
+
 a {
   text-decoration: none;
  }
@@ -26,5 +31,8 @@ li {
 @import "company";
 @import "footer";
 @import "modal";
+@import "grid";
+@import "variables";
+@import "collection"
 
 

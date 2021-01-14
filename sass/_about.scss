@@ -2,20 +2,33 @@
   background-color: #EEE9E6;
 }
 
-.about__title {
-  width: 573px;
-  padding: 160px 594px 33px 199px;
+.about__title--wrapper {
+  width: 743px;
+  height: 130px;
+  padding-top: 160px;
   margin-top: 0;
   background-image: url("../img/about-us-background-text.png");
   background-repeat: no-repeat;
-  background-position: 108px 135px;
+  background-position: 5px 170px;
+}
+
+.about__title {
+  padding: 40px 344px 16px 99px;
 }
 
 .about__text {
   width: 573px;
-  padding-left: 199px;
-  padding-right: 594px;
   margin: 0;
+}
+
+.about__text--first, .about__text--second {
+  padding-top: 44px;
+  padding-bottom: 40px;
+}
+
+.about--wrapper {
+  padding-top: 33px;
+  padding-bottom: 40px;
 }
 
 .about__link {
@@ -24,9 +37,7 @@
 }
 
 .about__quote--first {
-  width: 276px;
-  height: 72px;
-  padding-top: 16px;
+  margin: 0;
 }
 
 .about__quote--second {
@@ -34,6 +45,10 @@
     border-left: 1px solid #A78587;
     padding-left: 19px;
   }
+}
+
+.about__quote--second {
+  margin: 0;
 }
 
 .about__text--mod {

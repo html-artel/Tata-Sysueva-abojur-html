@@ -2,21 +2,25 @@
   background-color: #EEE9E6;
 }
 
-.catalog__title {
-  width: 573px;
-  padding: 132px 594px 33px 199px;
+.catalog__title--wrapper {
+  width: 727px;
+  height: 110px;
   margin-top: 0;
+  padding-bottom: 44px;
   background-image: url("../img/catalog-background-text.png");
   background-repeat: no-repeat;
-  background-position: 108px 135px;
+  background-position: 9px 12px;
+}
+
+.catalog__title {
+  padding: 12px 55px 10px 99px;
 }
 
 .catalog-card {
   background: #fff;
   width: 375px;
-  height: 604px;
+  height: 504px;
   margin-right: 20px;
-  margin-bottom: 20px;
   margin-left: 100px;
 }
 

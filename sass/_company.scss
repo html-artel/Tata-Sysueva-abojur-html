@@ -2,3 +2,45 @@
   background: #343235;
 }
 
+.company-mission {
+  background-image: url("../img/company-background-img.png");
+  background-repeat: no-repeat;
+  background-position: 50% 96%;
+}
+.company__title--wrapper--first {
+  width: 607px;
+  height: 110px;
+  margin-top: 120px;
+  padding-bottom: 44px;
+  background-image: url("../img/company-background-text.png");
+  background-repeat: no-repeat;
+  background-position: 9px 12px;
+}
+
+.company__title--first {
+  padding: 12px 65px 10px 99px;
+}
+
+.company__img--cup {
+  margin-top: 120px;
+}
+
+.company__title--wrapper--second {
+  width: 1018px;
+  height: 110px;
+  margin-top: 120px;
+  padding-bottom: 44px;
+  background-image: url("../img/company-background-text-our-team.png");
+  background-repeat: no-repeat;
+  background-position: 9px 12px;
+}
+
+.company__title--second {
+  padding: 12px 92px 10px 99px;
+  width: 573px;
+}
+
+.company__img--women {
+  padding-bottom: 120px;
+}
+
