@@ -1,0 +1,31 @@
+.menu {
+  position: relative;
+
+  display: none;
+}
+
+.menu__list {
+  @include list-reset;
+
+  position: absolute;
+  top: 65px;
+  right: -5px;
+
+  display: flex;
+  padding: 5px 15px;
+
+  background-color: $main;
+}
+
+.menu__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  color: $text-dark;
+  text-transform: uppercase;
+}

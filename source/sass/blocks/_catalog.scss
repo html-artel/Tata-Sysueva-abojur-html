@@ -1,0 +1,22 @@
+.catalog {
+  padding-bottom: 132px;
+
+  background-color: $main;
+}
+
+.catalog__title {
+  padding-left: 99px;
+  margin: 0 0 47px 0;
+
+  @include text($title-text, normal, 500, 42px, 54px, $text-dark);
+  text-transform: uppercase;
+
+  background-image: url("../img/catalog-background-text.png");
+  background-repeat: no-repeat;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

@@ -1,0 +1,103 @@
+.feedback {
+  @include text ($main-text, normal, 500, 14px, 18px, $text-unput);
+}
+
+.feedback__field {
+  position: relative;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    top: 28px;
+    right: -7px;
+
+    display: block;
+    width: 8px;
+    height: 1px;
+
+    background-color: $special-beige;
+    transform: rotate(-45deg);
+  }
+}
+
+.feedback__name,
+.feedback__tel {
+  width: 100%;
+  padding-bottom: 16px;
+
+  color: $main;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid $special-beige;
+  border-left: none;
+
+  //box-shadow: inset 0 0 0 50px $input-back;
+  //-webkit-text-fill-color: $main;
+  background-color: transparent;
+
+  &::placeholder {
+    @include text ($main-text, normal, 500, 14px, 18px, $text-unput);
+  }
+}
+
+.feedback__name {
+  margin-bottom: 36px;
+}
+
+.feedback__tel {
+  margin-bottom: 44px;
+}
+
+.feedback__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+
+  &:before {
+    content: "";
+
+    position: absolute;
+    top: 22px;
+    left: 150px;
+
+    display: block;
+    width: 14px;
+    height: 9px;
+
+    background-image: url("../img/select-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.feedback__dropdown {
+  margin-right: auto;
+  padding: 16px 43px 16px 20px;
+
+  @include text ($main-text, normal, 500, 14px, 18px, $text-unput);
+
+  background-color: transparent;
+  border: 1px solid $special-beige;
+  color: $white;
+
+  appearance: none;
+}
+
+.feedback__btn {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &:focus {
+    outline: 1px dotted $text-dark;
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  background-color: $background-header;
+}
+
+.header__element {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 21px;
+  padding-bottom: 23px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.header__logo {
+  margin-right: 246px;
+}
+
+.header__logo-img {
+  display: block;
+}
+
+.header__button {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  color: $beige;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px dotted $text-dark;
+  }
+}
+
+.header__icon {
+  width: 36px;
+  height: 32px;
+}
+
+.header__icon-menu {
+  display: block;
+}
+
+.header__icon-cross {
+  display: none;
+}
+

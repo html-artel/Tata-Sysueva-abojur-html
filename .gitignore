@@ -1,4 +1,10 @@
 .idea/
 .DS_Store
 *.log
-css/
+node_modules/
+npm-debug.*
+source/css/*.css
+source/css/*.map
+Thumbs.db
+build/
+PixelPerfect/
