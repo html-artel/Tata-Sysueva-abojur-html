@@ -99,3 +99,12 @@
     outline: 1px dotted $text-dark;
   }
 }
+
+.feedback__btn {
+  width: 474px;
+  height: 52px;
+  background: transparent;
+  border-style: none;
+  border-top: 1px solid $text-dark-add;
+  border-bottom: 1px solid $text-dark-add;
+}

@@ -16,17 +16,13 @@
 
   color: $text-dark;
 
-  &::before {
-
-  }
-
   &--text {
     text-decoration: underline;
   }
 
   &--tel {
     &::before {
-      content: " ";
+      content: "";
 
       position: absolute;
       top: 3px;
@@ -61,7 +57,7 @@
   font-style: normal;
 
   &::before {
-    content: " ";
+    content: "";
 
     position: absolute;
     top: 3px;
