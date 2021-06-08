@@ -1,0 +1,6 @@
+.primary-button {
+  @include text($main-text, normal, bold, 12px, 20px, $text-dark-add);
+
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.projects {
+  padding-bottom: 120px;
+
+  background-color: $main;
+}
+
+.projects__title {
+  margin: 0 0 34px 0;
+  padding-left: 99px;
+
+  @include text($title-text, normal, 500, 42px, 54px, $text-dark);
+  text-transform: uppercase;
+
+  background-image: url("../img/projects-background-text.png");
+  background-repeat: no-repeat;
+}

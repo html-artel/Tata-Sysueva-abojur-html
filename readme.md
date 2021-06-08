@@ -1,1 +1,1 @@
-Hi! I'm Tanja. This is an online store website. I am learning to typeset from a layout and this is my first such job.
+Учебный проект. Кейс №7 из навыка "Постороение сеток на гридах по макету" от [HTML Academy](https://htmlacademy.ru/intensive/htmlcss).

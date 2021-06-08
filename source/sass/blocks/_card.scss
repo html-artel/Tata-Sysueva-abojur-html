@@ -1,0 +1,66 @@
+.card {
+  width: 375px;
+
+  background-color: $white;
+
+  &--flex {
+    display: flex;
+    width: 572px;
+  }
+}
+
+.card__wrapper {
+  padding: 36px 36px 40px;
+}
+
+.card__title {
+  margin: 0 0 20px 0;
+
+  @include text($title-text, normal, 400, 32px, 36px, $text-dark);
+}
+
+.card__cost {
+  @include text($main-text, normal, 700, 22px, 24px, $background-dark);
+}
+
+.card__text {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  opacity: 0.6;
+}
+
+.card__link {
+  position: relative;
+  margin-top: auto;
+
+  @include text($main-text, normal, 700, 12px, 16px, $text-dark-secondary);
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 86px;
+
+    display: block;
+    width: 81px;
+    height: 8px;
+    background-image: url("../img/catalog-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px dotted $text-dark;
+  }
+}

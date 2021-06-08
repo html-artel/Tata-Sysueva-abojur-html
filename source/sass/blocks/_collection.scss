@@ -1,0 +1,41 @@
+.collection {
+  padding-top: 120px;
+  padding-bottom: 72px;
+
+  background-color: $main;
+}
+
+.collection__title {
+  margin: 0 0 36px 0;
+  padding: 28px 20px 24px 99px;
+
+  @include text($title-text, normal, 500, 42px, 54px, $text-dark);
+  text-transform: uppercase;
+
+  background-image: url("../../img/collections-background-text.png");
+  background-repeat: no-repeat;
+}
+
+.collection__text {
+  max-width: 662px;
+  margin: 0 0 73px 0;
+  padding-left: 99px;
+}
+
+.collection__photo {
+  display: flex;
+}
+
+.collection__wrapper {
+  width: 573px;
+  margin-right: 20px;
+}
+
+.collection__box {
+  width: 573px;
+}
+
+.collection__img {
+  display: block;
+  margin-bottom: 20px;
+}
