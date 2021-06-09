@@ -226,10 +226,10 @@
                 <a class="slider__link" href="#"> Подробнее </a>
               </div>
             </div>
-            <button class="slider__control slider__control--prev" type="button">
+            <button class="slider__control slider__control--prev" type="button" id="btn-prev">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="slider__control slider__control--next" type="button">
+            <button class="slider__control slider__control--next" type="button" id="btn-next">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
@@ -326,10 +326,10 @@
             </div>
             <div class="feedback__wrapper">
               <select class="feedback__dropdown" name="time-select" form="feedback" size="1">
-                <option>Удобное время</option>
-                <option>Утро</option>
-                <option>День</option>
-                <option>Вечер</option>
+                <option class="feedback__item">Удобное время</option>
+                <option class="feedback__item">Утро</option>
+                <option class="feedback__item">День</option>
+                <option class="feedback__item">Вечер</option>
               </select>
               <div class="feedback__element checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="agreement" id="agreement">
@@ -349,17 +349,18 @@
         <span class="visually-hidden">Закрыть окно</span>
       </button>
       <h2 class="modal__title">Заказать звонок</h2>
-      <form id="contact" action="#" method="post">
-        <label for="contact-form-name" class="visually-hidden">
+      <form class="modal__form" id="contact" action="#" method="post">
+        <label for="user-name" class="visually-hidden">
           Ваше имя
         </label>
-        <input class="modal__field" type="text" name="contact-form-name" id="contact-form-name" placeholder="Ваше имя">
+        <input class="modal__field modal__field--name" type="text" name="user-name" id="user-name" placeholder="Ваше имя">
         <label for="contact-form-tel" class="visually-hidden">
           Ваш номер телефона
         </label>
-        <input class="modal__field" type="tel" name="contact-form-tel" id="contact-form-tel" placeholder="Введите номер телефона">
+        <input class="modal__field modal__field--tel" type="tel" name="contact-form-tel" id="contact-form-tel" placeholder="Введите номер телефона">
         <button class="modal__btn primary-button" type="submit">Отправить</button>
       </form>
     </div>
+  <script src="js/script.min.js"></script>
   </body>
 </html>
